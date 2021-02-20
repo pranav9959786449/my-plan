@@ -1,0 +1,54 @@
+Github account:
+clone the github repo and bild docker image
+jenkins:
+go to jenkins dashboard and click on new item
+in the next screen,enter the item name
+you specifify the details of job
+we need to specify the location of files which need to build
+now go to build section and click on add build section and click on add build sstep
+execte window batch command
+in command window,enter the commands then click on the save button
+once saved, you can click on the build now option to see if you have successfully defined the job
+once the build is scheduled,it will run 
+click on the below history icon in the build history to bring up the details of world
+click on the console output link to see the details of build
+
+Access Jenkins:
+IP 80
+jenkin server is deployed in the cluster and can be accessed by the copying the external ip 80 and pasting in to the browser
+welcome to jenkins 
+login
+
+create docker hub account:
+go to credationals 
+add global 
+add creditionals
+fill out the form with username and password
+creating your first jenkins pipeline:new item and pipeline
+click ok
+
+
+nexus 
+download nexus
+create private repository
+proxy repo,group repo
+then compile it with maven
+
+run the jobs
+$docker run -d -p 8081:8081 --name nexus sonatype/nexus 3:3.14.0
+$docker push 127.0.0.1:8081/repository/test2/image-test 0.1
+
+
+build eks and cluster:
+build eks cluster on amazon server
+
+run jenkins helm to deploy apps
+add a new cloud
+select k8s
+next in jenkins installed
+fill out names and labels 
+click on add container
+name
+docker image
+build section add build set up
+build cluster on amazon service
